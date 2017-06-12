@@ -1,0 +1,47 @@
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"><button pButton type="button" (click)="showInfo()" icon="fa-search" iconPos="left" label="ค้นหา" class="ui-button-info"></button></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-4">วันที่ :<p-calendar [(ngModel)]="date"></p-calendar></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2">ถึงวันที่ :<p-calendar [(ngModel)]="date"></p-calendar></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"><button pButton type="button" (click)="showSuccess()" icon="fa-check" iconPos="left" label="ยืนยัน" class="ui-button-success"></button></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<br>
+<br>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">วันที่ :<p-calendar [(ngModel)]="date"></p-calendar></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">ถึงวันที่ :<p-calendar [(ngModel)]="date"></p-calendar></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">จำนวนห้องพักที่มาใช้บริการทั้งหมด :</div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"><input type="text" pInputText/> -. บาท</div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">รวมเป็นเงินทั้งหมด :</div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"><input type="text" pInputText/> -. บาท</div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<!-- เอาไว้ให้ปุ่มมีกล่องข้อความเด้ง-->
+<p-growl [(value)]="msgs"></p-growl>

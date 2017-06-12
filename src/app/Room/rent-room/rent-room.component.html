@@ -1,0 +1,69 @@
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">วันที่เข้าพัก :<p-calendar [(ngModel)]="date"></p-calendar></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">ถึง :<p-calendar [(ngModel)]="date"></p-calendar></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+<br>
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2">
+        <p-checkbox name="group1" value="450" label="450-.บาท" [(ngModel)]="selectedPrice"></p-checkbox>
+    </div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2">
+        <p-checkbox name="group1" value="550" label="550-.บาท" [(ngModel)]="selectedPrice"></p-checkbox>
+    </div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2">
+        <p-checkbox name="group1" value="650" label="650-.บาท" [(ngModel)]="selectedPrice"></p-checkbox>
+    </div>
+
+</div>
+<br>
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"><button pButton type="button" (click)="showInfo()" icon="fa-search" iconPos="left" label="แสกน" class="ui-button-info"></button></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">
+        <p-lightbox [images]="images"></p-lightbox>
+    </div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">ชื่อ : <input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">นามสกุล : <input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">เลขบัตรประชาชน : <input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">เบอร์โทรศัพท์ : <input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">รวม : <input type="text" pInputText /> </div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2"><button pButton type="button" (click)="showSuccess()" icon="fa-check" iconPos="left" label="ยืนยัน" class="ui-button-success"></button></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2"><button pButton type="button" (click)="showError()" icon="fa-times" iconPos="left" label="ยกเลิก" class="ui-button-danger"></button></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2"></div>
+</div>
+
+<!-- เอาไว้ให้ปุ่มมีกล่องข้อความเด้ง-->
+<p-growl [(value)]="msgs"></p-growl>

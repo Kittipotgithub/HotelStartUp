@@ -1,0 +1,40 @@
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">วันที่ :<p-calendar [(ngModel)]="date"></p-calendar></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-4">ถึงวันที่ :<p-calendar [(ngModel)]="date"></p-calendar></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2">
+        <button pButton type="button" (click)="showInfo()" icon="fa-search" iconPos="left" label="ค้นหา" class="ui-button-info"></button>
+        <button pButton type="button" (click)="showError()" icon="fa-times" iconPos="left" label="ยกเลิก" class="ui-button-danger"></button>
+    </div>
+</div>
+
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">ชื่อ :<input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-4">นามสกุล :<input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2"></div>
+</div>
+<br>
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-3">รหัสบัตรประชาชน :<input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-4">เบอร์โทรศัพท์ :<input type="text" pInputText /></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-2"></div>
+</div>
+<br>
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3"></div>
+    <div class="ui-g-12 ui-md-6 ui-lg-9">
+    <p-dataTable [style]="{'margin-top':'20px'}" [value]="cars" [rows]="10" [paginator]="true" [pageLinks]="3" [responsive]="true">>
+    <p-header>ค้นหา</p-header>
+    <p-column field="..." header="ลำดับ"></p-column>
+    <p-column field="..." header="วันที่"></p-column>
+    <p-column field="..." header="ชื่อ"></p-column>
+    <p-column field="..." header="นามสกุล"></p-column>
+    <p-column field="..." header="รหัสบัตรประชาชน"></p-column>
+    <p-column field="..." header="เบอร์โทรศัพท์"></p-column>
+</p-dataTable></div>
+</div>
+
+<!-- เอาไว้ให้ปุ่มมีกล่องข้อความเด้ง-->
+<p-growl [(value)]="msgs"></p-growl>
