@@ -3,12 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AdminEditRoomComponent } from './Room/admin-edit-room/admin-edit-room.component';
-import { RentRoomComponent } from './Room/rent-room/rent-room.component';
-import { ConfirmRentRoomComponent } from './Room/confirm-rent-room/confirm-rent-room.component';
-import { HistoryRoomComponent } from './Room/history-room/history-room.component';
-import { SummaryMoneyComponent } from './Room/summary-money/summary-money.component';
 import { routing } from './app.routing';
 import { Routes, RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/primeng';
@@ -28,12 +22,6 @@ import { HeaderComponent } from './Share/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AdminEditRoomComponent,
-    RentRoomComponent,
-    HistoryRoomComponent,
-    ConfirmRentRoomComponent,
-    SummaryMoneyComponent,
     SidebarComponent,
     ReceptionComponent,
     HeaderComponent
